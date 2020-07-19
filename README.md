@@ -1,6 +1,12 @@
 # 🕛 prettysleeper 
 ## A Small Gimmick that makes waiting just a bit more fun by introducing a Wizard and a countdown timer to show the current waiting time with a running clock, emoji's and memes.
 
+### How to install:
+Download from pip:
+```
+python -m pip install prettysleeper
+```
+
 ### How to use:
 ```
 # -*- coding: utf-8 -*-
