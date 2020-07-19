@@ -4,7 +4,7 @@
 ### How to install:
 Download from pip:
 ```
-python -m pip install prettysleeper
+python -m pip install prettysleeper wizprint # Wizprint is a dependency not automatically installed.
 ```
 
 ### How to use:

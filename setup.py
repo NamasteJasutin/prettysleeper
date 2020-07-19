@@ -24,7 +24,7 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Operating System :: OS Independent"
     ],
-    packages=["prettysleeper"],
+    packages=["prettysleeper", "wizprint"],
     include_package_data=True,
     entry_points={
         "console_scripts": [
