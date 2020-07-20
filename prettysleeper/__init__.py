@@ -2,19 +2,19 @@
 from time import sleep
 from wizprint import fnt
 
-def slpr(time, alert="Done!", final=True, wiz="w"):
+def psleep(time, alert="Wake up!", final=False, wiz="w"):
     """
     slpr(time, alert="Done!")
     time: How many seconds to sleep
     alert: Pass a message to print once done ("Done!" by default)
-    final: When set to True, will return True (True by default)
+    final: When set to True, will return True (False by default)
     """
     try:
         try:
             wiz = fnt.emojis.get(wiz) # Try to get a suggested letter
         except:
             wiz = fnt.emojis.get("w") # Get The Wizard if not found
-        h = f"{wiz}   "
+        h = f"{wiz}   " # Header
         chars = ["⇑", "⇗", "⇒", "⇘", "⇓", "⇙", "⇐", "⇖"]
         chars2 = ["🕐", "🕝", "🕓", "🕡", "🕗", "🕤", "🕚", "🕦"]
         charsToUse = chars2
@@ -31,7 +31,8 @@ def slpr(time, alert="Done!", final=True, wiz="w"):
         if final == True:
             return True
     except:
-        return False
+        if final == True:
+            return False
     finally:
         msg = " " * 32
         bck = "\b" * 33

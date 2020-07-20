@@ -10,8 +10,8 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="prettysleeper",
-    version="1.0.0",
-    description="slpr; A sleep function with Emoji's. It shows a countdown, progress clock (switching emoji's), and my favorite, the Wizard.",
+    version="1.1.0",
+    description="psleep; A sleep function with Emoji's. It shows a countdown, progress clock (switching emoji's), and my favorite, the Wizard.",
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/NamasteJasutin/wizprint",
@@ -24,11 +24,11 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Operating System :: OS Independent"
     ],
-    packages=["prettysleeper", "wizprint"],
+    packages=["prettysleeper"],
     include_package_data=True,
     entry_points={
         "console_scripts": [
-            "NamasteJasutin=prettysleeper.__main__:main",
+            "psleep=prettysleeper.console:main",
         ]
     },
 )

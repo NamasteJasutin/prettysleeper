@@ -4,18 +4,18 @@
 ### How to install:
 Download from pip:
 ```
-python -m pip install prettysleeper wizprint # Wizprint is a dependency not automatically installed.
+python -m pip install prettysleeper
 ```
 
 ### How to use:
 ```
 # -*- coding: utf-8 -*-
-from prettysleeper import slpr
-slpr(10)
+from prettysleeper import psleep
+psleep(10)
 ```
 **This will ouput something like this:**
 ```
-🧙   🕛 sleeping for 5 
+🧙   🕛 sleeping for 10 
 ```
 When it's done, the message is replaced with an alert:
 ```
@@ -23,18 +23,26 @@ When it's done, the message is replaced with an alert:
 ```
 Standard messages show a simple countdown and an alert message after, which can be customized using:
 ```
-slpr(1, alert="YEET!")
+psleep(1, alert="YEET!")
 ```
-**... will look like this:**
+**... will first like this:**
 ```
 🧙   🕛 sleeping for 1 
+```
+**... then:**
+```
 🧙   YEET!
-True
 ```
 
 *All options:
-slpr(time, alert="Done!", final=True, wiz="w"):
+psleep(time, alert="Done!", final=True, wiz="w"):
+When final is set to False, there won't be a final True output after the alert.
 Try loading as module ;)
 ```
-python -m wizprint
+python -m prettysleeper
+```
+
+For console usage, see:
+```
+psleep -h
 ```
